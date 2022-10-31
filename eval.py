@@ -35,7 +35,7 @@ def predict(sentence):
   return predicted_sentence
   
   
-  def preprocess_sentence(sentence):
+def preprocess_sentence(sentence):
   sentence = re.sub(r"([?.!,])", r" \1 ", sentence)
   sentence = sentence.strip()
   return sentence
